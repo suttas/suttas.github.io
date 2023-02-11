@@ -9,6 +9,7 @@ body {
 	padding: 0 2%; 
 	color: white;
 	margin: 0 auto 4em auto;	
+	overflow: scroll;
 	}
 h2 {
 	font-size: 1.1em; 
