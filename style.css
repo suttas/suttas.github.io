@@ -9,25 +9,33 @@ body {
 	padding: 0 2%; 
 	color: white;
 	margin: 0 auto 4em auto;	
-	overflow: scroll;
+	overflow-y: scroll;
 	}
 h2 {
 	font-size: 1.1em; 
 	}
-h1 { 
-	font-size: 1.5em; 
+main h1 { 
+	font-size: 1.3em; 
+
 	}
 main a { 
 	text-decoration: none; 
-	color: white; 
-	border-bottom: 1px dashed #DF87FF; 
+	color: #EFB7FF; 
+	/* border-bottom: 1px dashed #DF87FF;  */
 	}
 main a:hover { 
 	border-bottom: 1px solid #DF87FF; 
 	}
-main h1 a, main h1 a:hover { 
+header h1 {
+		font-size: 1.6em; 
+		font-variant-caps: small-caps;
+			border-bottom: 1px dashed grey;
+			padding-bottom: 0.1em;
+	}
+header h1 a, header h1 a:hover { 
 	color: #DF87FF; 
-	border-bottom: 2px solid #DF87FF;  
+	text-decoration: none;
+	
 	}
 sup { 
 	font-size: 75%; 
@@ -62,3 +70,12 @@ nav ul  {
 nav a { color:  #EFA7FF; text-decoration: none; }
 nav a:hover { border-bottom: 1px solid  #EFA7FF; }
 nav ul  li { margin-right: 1em; }
+
+main ul {
+		list-style-type: none; 
+		padding-left: 1em;
+}
+
+@media only print {
+	header h1 a { color: black; }
+}
