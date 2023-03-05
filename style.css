@@ -1,65 +1,52 @@
-header, section, footer, aside, nav, main { display: block; } 
+header, section, footer, aside, nav, main { 
+	display: block;
+	} 
 
 body { 
 	line-height: 1.4em;  
-	font-size: 1.2em;  
+	font-size: 1.1em;  
 	max-width: 40em; 
 	padding: 0 2%; 
 	margin: 0 auto 4em auto;	
 	overflow-y: scroll;
 	}
-
-h2 {
-	font-size: 1.1em; 
+header h1 {
+	font-size: 1.6em; 
+	font-variant-caps: small-caps;
+	border-bottom: 1px dashed grey;
+	padding-bottom: 0.1em;
 	}
 main h1 { 
 	font-size: 1.3em; 
 	}
-main a { 
+main h2 {
+	font-size: 1.1em; 
+	}
+a, a:hover { 
+	color: #004A7F; 
 	text-decoration: none; 
-	color: #7F006E; 
+	border-color: #004A7F;
 	}
-main a:hover { 
-	border-bottom: 1px solid #7F006E; 
-	}
-header h1 {
-		font-size: 1.6em; 
-		font-variant-caps: small-caps;
-			border-bottom: 1px dashed grey;
-			padding-bottom: 0.1em;
-	}
-header h1, header h1 a, header h1 a:hover { 
-	color: #7F006E; 
-	text-decoration: none;
-	
+
+main a:hover {
+	border-bottom: 1px solid;
 	}
 sup { 
 	font-size: 75%; 
 	line-height: 0em; 
 	}
-sup a { 
-	color: #7F006E; 
-	border: none; 
+sup a:hover {
+	border: 0;
+	text-decoration: underline;
 	}
-sup a:hover { 
-	color: #7F006E; 
-	text-decoration: underline; 
-	border: none; 
+p > a, p > a:hover { 
+	text-decoration: underline;
+	border: 0; 
 	}
-a[href^="#l"] { 
-	color: #7F006E; 
-	border: none; 
-	}
- a[href^="#l"]:hover { 
-	text-decoration: underline; 
-	}
-p a, p a:hover { text-decoration: underline; border: 0; }
-
 main ul {
-		list-style-type: none; 
-		padding-left: 1em;
+	list-style-type: none; 
+	padding-left: 1em;
 }
-
 @media only print {
 	header h1 a { color: black; }
 }
