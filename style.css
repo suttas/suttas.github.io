@@ -13,7 +13,7 @@ body {
 header h1 {
 	font-size: 1.6em; 
 	font-variant-caps: small-caps;
-	border-bottom: 1px dashed grey;
+	border-bottom: 1px solid grey;
 	padding-bottom: 0.1em;
 	}
 main h1 { 
@@ -21,6 +21,7 @@ main h1 {
 	}
 main h2 {
 	font-size: 1.1em; 
+	margin: 0em;
 	}
 a, a:hover { 
 	color: #006060; 
@@ -43,10 +44,15 @@ p > a, p > a:hover {
 	text-decoration: underline;
 	border: 0; 
 	}
+blockquote {
+	margin-left: 1em; 
+	}
 main ul {
 	list-style-type: none; 
-	padding-left: 1em;
-}
+	padding: 0em;
+	margin-top: 0em;
+	}
 @media only print {
-	header h1 a { color: black; }
-}
+	*, a { color: black; }
+	header { display: none; }
+	}
