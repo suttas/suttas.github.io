@@ -4,7 +4,8 @@ header, section, footer, aside, nav, main {
 
 body { 
 	line-height: 1.4em;  
-	font-size: 1.1em;  
+	font-family: 'source serif 4', 'source serif pro', serif;
+	font-size: 1em;  
 	max-width: 40em; 
 	padding: 0 2%; 
 	margin: 0 auto 4em auto;	
