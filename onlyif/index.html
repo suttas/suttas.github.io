@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>IF or ONLY IF</title>
+
+<style>
+a[href], a[href]:hover { color: #007575; text-decoration: none; }
+a[href]:hover { text-decoration: underline; }
+sup > a:hover { text-decoration: none; }
+body { 
+	line-height: 1.4em;  
+	font-family: 'source serif 4', 'source serif pro', serif;
+	font-size: 1em;  
+	max-width: 40em; 
+	padding: 2%; 
+	margin: 0 auto 4em auto;	
+	overflow-y: scroll;
+	}
+main h1 { text-align: center; margin: 2em 0em; }
+h2 { margin-top: 2em; }
+table { 
+	line-height: 1.3em;
+	caption-side: bottom; 
+	border-collapse: collapse;
+	margin: auto; 
+	font-size: smaller; 
+	}
+td, th { border: 1px solid grey; padding: 1pt 5pt 1pt 2pt; vertical-align: top; text-align:left; }
+figure { width:100%; margin: 0; text-align:center; }
+figure img { margin: 0 2pt 0 2pt; border: 2px solid black; min-width: 100px; max-width: 300px; }
+figcaption { font-style: italic; font-size: smaller; }
+table caption { font-style: italic; }
+sup { line-height: 0em; font-size: 0.8em;  }
+figure { margin-bottom: 1em; }
+li.part { margin: 1em 0; font-weight: bold; }
+hr { width: 30%; color: black; }
+hr.title { width: 100%; }
+</style> 
+</head>
+
+
+<body>
+<main>
+<h1 style="line-height: 1em">IF or ONLY IF<br><small><small>the logic behind Dependent Arising</small></small></h1>
+
+<p style="text-align: center; font-size: 1.2em; font-style: italic; margin-bottom: 2em">Bhikkhu Sunyo, 2025</p>
+
+<nav id="toc">
+<ul type="none">
+  <li><a href="#section1">Introduction</a></li>
+  <li><a href="#section2">The logic of “if”</a></li>
+  <li><a href="#section3">The problems with “if”</a></li>
+  <li><a href="#section4">The logic of “only if”</a></li>
+  <li><a href="#section5">Translating as “only if”</a></li>
+  <li><a href="#section6">The logic of “because”</a></li>
+  <li><a href="#section7">Causality and “only if”</a></li>
+  <li><a href="#section8">Closing thoughts</a></li>
+  <li><a href="#section9">Notes</a></li>
+  <li><a href="#section10">References</a></li>
+</ul>
+</nav>
+
+<h3 id="section1">Introduction</h3>
+
+<p id="par1">When the Buddha of the early text teaches Dependent Arising, he often uses an underlying principle called ‘conditionality’ (<em>idappaccayatā</em>, which I prefer to translate as ‘dependency’, for reasons that will become clear). He clarifies this principle with four statements: </p>
+<ul>
+  <li>Imasmiṃ sati, idaṃ hoti.</li>
+  <li>Imass’uppādā, idaṃ uppajjati.</li>
+  <li>Imasmiṃ asati, idaṃ na hoti.</li>
+  <li>Imassa nirodhā, idaṃ nirujjhati.</li>
+</ul>
+
+<p id="par2">I translate these as: </p>
+<ul>
+  <li>Only if there is this, will there be that. </li>
+  <li>Because this arises, that arises.</li>
+  <li>If there isn’t this, there won’t be that. </li>
+  <li>When this ceases, that will cease.</li>
+</ul>
+
+<p id="par3">This essay focuses on the first statement: “Only if there is this, will there be that.” Most translations of this statement lack “only”. For instance, Venerable Bodhi has: “When this exists, that comes to be.”&zwj;<sup><a href="#n1" id="l1">[1]</a></sup> I will show that this translation causes various problems when it is applied to the specific links of Dependent Arising. These problems all stem from the Buddha inadvertently committing logical fallacies, which are avoided when we include “only”.</p>
+
+<p id="par4">This is purely a theoretical issue, not a pragmatic one, so please keep in mind that I approach the matter from a very limited angle here. Actual insights into Dependent Arising are not mere logical theories and are much deeper, and on another level, than the following discussion. I say this because this essay will not appeal to everybody, and the matters discussed here do not need to be understood in order to understand the Dhamma. However, for many Buddhists their first approach to the Dhamma is theoretical, and textual interpretation always has a theoretical side to it, even for the fully enlightened. And on this level the inclusion of “only” can make a meaningful difference.</p>
+
+<p id="par5">My explanation relies on some logical principles, which I shall explain first.&zwj;<sup><a href="#n2" id="l2">[2]</a></sup> If this section is too complicated, it can probably be skipped without missing my main message. However, I encourage the interested reader to take it slow and try to understand these matters. </p>
+<h3 id="section2">The logic of “if”</h3>
+
+<p id="par6">Translations of <em>imasmiṃ sati idaṃ hoti</em> such as “when this exists, that comes to be” are sometimes taken to be temporal statements, specifically concerned with the present moment. But the statement describes a more general principle, one that applies across time. The word “when” has the meaning of “if” here.&zwj;<sup><a href="#n3" id="l3">[3]</a></sup> “When this exists, that comes to be” forms a <strong>conditional statement</strong>.</p>
+
+<p id="par7">In logical notation, conditional statements are often written with an arrow symbol, such as <em>this</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>that</em>. Instead of <em>this</em> and <em>that</em>, the variables <em>P</em> and <em>Q</em> are commonly used: </p>
+<ul>
+  <li><em>P</em> &#11106;&#xFE0E; <em>Q</em></li>
+</ul>
+
+<p id="par8">This can be read aloud as “if <em>P</em>, then <em>Q</em>” (or alternatively as “<em>P</em> implies <em>Q</em>”).</p>
+
+<p id="par9">For a concrete example, we best take something outside of Dependent Arising first. So let <em>P</em> = “it is Saturday” and <em>Q</em> = “it is a weekend”. For <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> we get: </p>
+<ul>
+  <li>If it is Saturday, then it is a weekend. (Or, it being Saturday implies it is a weekend.)</li>
+</ul>
+
+<p id="par10">The Buddha never meant the principle of dependency to be applied to things such as these, but it serves to illustrate the logic.</p>
+
+<p id="par11">From <em>P</em> &#11106;&#xFE0E; <em>Q</em>, we can make two <em>valid</em> inferences: </p>
+<ul>
+  <li><em>P</em>, therefore <em>Q</em></li>
+  <li>not <em>Q</em>, therefore not <em>P</em></li>
+</ul>
+
+<p id="par12">For example, from “if it is Saturday, then it is a weekend”, we can correctly say the following about a given day of the week: </p>
+<ul>
+  <li>It is Saturday. Therefore, it is a weekend. </li>
+  <li>It is not a weekend. Therefore, it is not Saturday. </li>
+</ul>
+
+<p id="par13">These two forms of valid arguments are respectively called <strong>modus ponens</strong> and <strong>modus tollens</strong>. (Old terms which have stuck around. They are Latin for “the way of affirmation” and “the way of denial”.)</p>
+
+<p id="par14">From <em>P</em> &#11106;&#xFE0E; <em>Q</em> we can also draw two <em>invalid</em> inferences: </p>
+<ul>
+  <li><em>Q</em>, therefore <em>P</em></li>
+  <li>not <em>P</em>, therefore not <em>Q</em></li>
+</ul>
+
+<p id="par15">For example: </p>
+<ul>
+  <li>It is a weekend. Therefore, it is Saturday.</li>
+  <li>It is not Saturday. Therefore, it is not a weekend. </li>
+</ul>
+
+<p id="par16">Both inferences are false, which in this case we can see clearly, because the day in question could also be a Sunday.</p>
+
+<p id="par17">These two fallacies are respectively called <strong>affirming the consequent</strong> and <strong>denying the antecedent</strong>. The consequent is <em>Q</em>, the antecedent <em>P</em>, which are respectively affirmed and denied in the premise, the part before “therefore”.</p>
+
+<p id="par18">These fallacies are surprisingly easy to commit when the topic becomes more abstract. So before we turn to Dependent Arising, to further get the principle across let <em>P</em> = “it rains” and <em>Q</em> = “there are clouds”. For <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> we get: </p>
+<ul>
+  <li>If it rains, there are clouds. </li>
+</ul>
+
+<p id="par19">Which of the following inferences are valid and which are not? </p>
+<ul>
+  <li>It rains. Therefore, there are clouds.</li>
+  <li>There are no clouds. Therefore, there is no rain.</li>
+  <li>There are clouds. Therefore, it rains.</li>
+  <li>It does not rain. Therefore, there are no clouds.</li>
+</ul>
+
+<p id="par20">The first two inferences are valid. They are respectively modus ponens and modus tollens. The last two are invalid. They are respectively affirming the consequent and denying the antecedent.</p>
+
+<p id="par21">To foreshadow what’s to come: I will argue that under the standard translations of <em>imasmiṃ sati idaṃ hoti</em>, the Buddha effectively commits the two fallacies. But when “only” is included, he uses the two valid inferences.</p>
+
+<p id="par22">We can also say that <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> signifies that <em>P</em> is a <strong>sufficient condition</strong> for <em>Q</em>. This means that if we have <em>P</em>, we will <em>always</em> have <em>Q</em>. The occurrence of <em>P</em> is <em>sufficient</em> (is <em>enough</em>) for the occurrence of <em>Q</em>.</p>
+
+<p id="par23">In our examples, if it is Saturday, it is always a weekend. So it being Saturday is a sufficient condition for it being a weekend. Likewise, if it rains, there are always clouds. So rain is a sufficient condition for clouds.</p>
+
+<p id="par24">A <strong>necessary condition</strong>, on the other hand, is something that is <em>needed</em> or <em>required</em> for another thing. For example, fuel is a necessary condition for fire, because without fuel, no fire can exist. However, fuel is not a sufficient condition for fire, because fuel can exist without causing a fire.</p>
+
+<p id="par25">In <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> (if <em>P</em>, then <em>Q</em>), the antecedent <em>P</em> is not required for the consequent <em>Q</em>. Logically speaking, <em>Q</em> could also come about through something other than <em>P</em>. For example, it could additionally be the case that <em>R</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em>. Therefore, <em>P</em> is not a necessary condition for <em>Q</em>.</p>
+
+<p id="par26">In our examples, it being a weekend is not a necessary condition for Saturday, because on Sunday it is a weekend as well. And rain is not a necessary condition for clouds, because there can also be clouds when it does not rain.</p>
+
+<p id="par27">To put this in other words, it being a weekend does not depend on it being Saturday, and clouds do not depend on rain. Generally, in “if <em>P</em>, then <em>Q</em>” the consequent <em>Q</em> does not depend on the antecedent <em>P</em>.</p>
+
+<p id="par28">My argument for the inclusion of “only” hinges on the distinction between these two types of conditions. What did the Buddha mean by <em>imasmiṃ sati idaṃ hoti</em>? Is <em>this</em> a necessary condition for <em>that</em>, or is <em>this</em> a sufficient condition for <em>that</em>? Put differently, is <em>that</em> dependent on <em>this</em>, or is it not?</p>
+
+<p id="par29">The statement <em>imasmiṃ sati idaṃ hoti</em> is sometimes seen as a statement of sufficiency of <em>this</em> for <em>that</em>. This is largely if not solely based on translations that omit “only”.&zwj;<sup><a href="#n4" id="l4">[4]</a></sup> More often, the logical principle behind the statement is correctly understood to be that of necessity, but such translations are left unchallenged.&zwj;<sup><a href="#n5" id="l5">[5]</a></sup> In some cases the statement is even paraphrased with the inclusion of “only” to explain what it means, but when it is translated, “only” is still omitted!&zwj;<sup><a href="#n6" id="l6">[6]</a></sup> I think some logical problems are unrecognized or else glossed over, even in the latter case. </p>
+<h3 id="section3">The problems with “if”</h3>
+
+<p id="par30">When <em>imasmiṃ sati idaṃ hoti</em> is translated as “if (or when) this exists, then there will be that”, it indicates that <em>this</em> is a sufficient condition for <em>that</em>. Grammatically this is possible, but it creates conceptual problems when applied to Dependent Arising. (By “Dependent Arising” I specifically mean the Buddha’s teachings on the origination of suffering, not the general principle of dependency that underlies it.)&zwj;<sup><a href="#n7" id="l7">[7]</a></sup></p>
+
+<p id="par31">The most common exposition of Dependent Arising has twelve factors:<br> </p>
+
+<table>
+<tbody>
+<tr>
+  <th></th><th>Pali</th><th>Translated here as</th><th>Also known as </th></tr>
+<tr class="overline">
+  <td>1</td>
+  <td><em>Avijjā</em></td>
+  <td>Ignorance</td>
+  <td> </td></tr>
+<tr>
+  <td>2</td>
+  <td><em>Saṅkhārā</em></td>
+  <td>Willful actions</td>
+  <td>Formations </td></tr>
+<tr>
+  <td>3</td>
+  <td><em>Viññāṇa</em></td>
+  <td>Consciousness</td>
+  <td> </td></tr>
+<tr>
+  <td>4</td>
+  <td><em>Nāma&shy;rūpa</em></td>
+  <td>Immaterial aspects and body</td>
+  <td>Name and form </td></tr>
+<tr>
+  <td>5</td>
+  <td><em>Saḷ&shy;āyatana</em></td>
+  <td>The six senses</td>
+  <td>The six sense bases </td></tr>
+<tr>
+  <td>6</td>
+  <td><em>Phassa</em></td>
+  <td>Sense impression</td>
+  <td>Contact </td></tr>
+<tr>
+  <td>7</td>
+  <td><em>Vedanā</em></td>
+  <td>Sensation</td>
+  <td>Feeling </td></tr>
+<tr>
+  <td>8</td>
+  <td><em>Taṇhā</em></td>
+  <td>Craving</td>
+  <td> </td></tr>
+<tr>
+  <td>9</td>
+  <td><em>Upādāna</em></td>
+  <td>Taking up (also means ‘fuel’)</td>
+  <td>Grasping/clinging </td></tr>
+<tr>
+  <td>10</td>
+  <td><em>Bhava</em></td>
+  <td>Existence</td>
+  <td>Becoming </td></tr>
+<tr>
+  <td>11</td>
+  <td><em>Jāti</em></td>
+  <td>Birth</td>
+  <td> </td></tr>
+<tr>
+  <td>12</td>
+  <td><em>Jarāmaraṇa</em></td>
+  <td>Old age and death</td>
+  <td> </td></tr></tbody>
+</table>
+
+<p id="par32">The Buddha links each subsequent factor with the preceding one: he links old age and death to birth; birth to existence; and so forth until ignorance. In doing so, he uses the principle of dependency with its four statements.</p>
+
+<p id="par33">With all that in place, I can now illustrate some of the problems that arise when the first statement is translated with “if” instead of “only if”. For sake of argument, I treat the links in a mixed order and combine some of them together. </p>
+<ul>
+  <li>“If there are sensations, there will be craving.” Remember, this means that if there are sensations, there will <em>always</em> be craving. Sensations would be a sufficient condition for craving. This is incorrect, because enlightened beings still experience sensations, but they have no more craving.&zwj;<sup><a href="#n8" id="l8">[8]</a></sup> Also, even before enlightenment there can be sensations without craving, like in deep states of meditation. </li>
+  <li>“If there is birth, there will be old age and death.” Birth does always leads to death, indeed. But since it is possible to die young, it does not always lead to old age&zwj;<sup><a href="#n9" id="l9">[9]</a></sup> (which is defined as having gray hear, wrinkled skin, etc.)&zwj;<sup><a href="#n10" id="l10">[10]</a></sup></li>
+  <li>“If there is craving and consequent taking up, there will be a continuation of existence and consequent birth.” This is false, since you may have craving today but get enlightened tomorrow, after which you will not be reborn. So not all craving is sufficient for rebirth.&zwj;<sup><a href="#n11" id="l11">[11]</a></sup> Even existence is not a sufficient condition for birth. An enlightened being is still in a state of existence but does not get reborn.&zwj;<sup><a href="#n12" id="l12">[12]</a></sup> Also, according to one discourse there are non-returners who will still obtain existence but not rebirth.&zwj;<sup><a href="#n13" id="l13">[13]</a></sup> They get fully extinguished in “the in-between”, meaning after death but before taking a proper birth. So for them too, existence is not sufficient for birth.</li>
+  <li>“If there is ignorance and consequent willful actions, there will be consciousness.” The reasoning of the previous point applies here as well.&zwj;<sup><a href="#n14" id="l14">[14]</a></sup> If ignorance <em>always</em> leads to the rearising of consciousness—which means, if ignorance is a sufficient condition for rebirth—then enlightened beings would also get reborn, since they also had ignorance earlier in life. </li>
+  <li>“If there is consciousness, there will be the immaterial aspects and body (<em>nāmarūpa</em>); and if there are the immaterial aspects and body, there will be consciousness.” The mutual conditioning between these two factors is not part of the standard twelvefold exposition, but it is mentioned in a handful of discourses.&zwj;<sup><a href="#n15" id="l15">[15]</a></sup> With this translation, the two factors would keep each other going, being mutually sufficient. No other factors would be required for their continuance. Even if there were no ignorance and willful actions, consciousness would still lead to <em>nāmarūpa</em> and <em>nāmarūpa</em> to consciousness. It should also be noted that whenever their mutual conditioning is mentioned, the prior factors of ignorance and willful actions are not included in the analysis. Instead of ignorance, <em>nāmarūpa</em> and consciousness are at the base of the chain of factors. If they were sufficient conditions, this would be problematic, because then they would inadvertently set off the rest of the chain including further birth. But even enlightened beings still have consciousness and <em>nāmarūpa</em>.</li>
+  <li>“If there are the six senses, there will be sense impressions and consequent sensations.” Usually this is the case, but not always. During the attainment of cessation (<em>saññā&shy;vedayita&shy;nirodha</em>), there are still sense faculties, yet no sensations.&zwj;<sup><a href="#n16" id="l16">[16]</a></sup> One discourse also says: “If the internal sense of sight is intact, but no external sight comes within its scope, and there is no corresponding engagement there, then the corresponding section of consciousness [and hence sensation] does not arise.”&zwj;<sup><a href="#n17" id="l17">[17]</a></sup> This is repeated for the other five senses. So there can be the six senses, yet no sensations. This means the senses are not sufficient for sensations. (Not in every moment, at least. One can argue that the six senses will <em>eventually</em> always lead to sensations. But that argument would be more complicated than simply including “only”, which avoids the problem in the first place, as we’ll see.)</li>
+  <li>“If there is ignorance, there will be willful actions.” It is implied that the willful actions are always deluded ones. I think ignorance is indeed sufficient for such actions, so this statement is not wrong in itself. However, this translation technically allows for completely different sufficient conditions to <em>also</em> lead to willful actions. Logically, we could accept the statement and still say: “If there is <em>no</em> ignorance, there will <em>also</em> be willful actions.” This is clearly not the Buddha’s idea when he says willful actions are dependent on ignorance.</li>
+</ul>
+
+<p id="par34">The last problem applies to all other links as well. In each case, different sufficient conditions could lead to the same result.&zwj;<sup><a href="#n18" id="l18">[18]</a></sup> Let’s take “If there is birth, there will be old age and death.” This does not prevent anyone from concluding: “If there is <em>no</em> birth, there will still be old age and death.” Of course, this conclusion makes little sense in real life, but I’m just pointing out the logical issue with the standard translation. It may be more relevant in the statement: “If there is existence [continuing from a past life], there will be birth.” Materialists would argue that there is birth if there is no continuation from a prior existence. In doing so, they would, logically speaking, not contradict the Buddha’s statement, when translated without “only”. Yet, one purpose of Dependent Arising is precisely to counter the materialistic worldview. It is one of the “extremes” that Dependent Arising avoids.&zwj;<sup><a href="#n19" id="l19">[19]</a></sup> So we can expect the Buddha to phrase things in a way that leaves no room for the materialists.</p>
+
+<p id="par35">For these examples, I adopted the common multiple-lifetime interpretation of Dependent Arising, which I explained in depth elsewhere.&zwj;<sup><a href="#n20" id="l20">[20]</a></sup> The specific interpretation of the links is irrelevant to my main point, however. Similar issues will exist for other interpretations. What I’m getting is the translation of <em>imasmiṃ sati idaṃ hoti</em>, not the interpretation of the links.</p>
+
+<p id="par36">The examples I gave are all just symptoms of a deeper problem. The standard translation that omits “only” inadvertently leads the Buddha to make fundamental logical fallacies. This can be illustrated with any of the links, but when the Buddha explained his own insights into Dependent Arising, he often started at old age and death. This is also one of the links that is easiest to understand, so let us start there as well. For a translation without “only”, the first step in the Buddha’s analysis would be as follows: </p>
+
+<blockquote>
+
+<p id="par37">I thought: “There will be old age and death, <em>if</em> there is what? What do old age and death depend on?” Then, by attending properly, I comprehended it, understanding that there will be old age and death, <em>if</em> there is birth. Old age and death depend on birth.&zwj;<sup><a href="#n21" id="l21">[21]</a></sup></p>
+</blockquote>
+
+<p id="par38">From this analysis, the Buddha derives the existence of birth. By this I mean, he does not simply conclude that old age and death <em>depend</em> on birth. He also concludes that, since there in fact is old age and death, there must be birth. That is to say, there must be a birth preceding all old age and death. This conclusion is rather trivial in this case, but the Buddha does the same for all other links, working his way back to ignorance. He concludes that, since there is birth, there must have been prior existence, and so forth until ignorance.</p>
+
+<p id="par39">We can phrase the logical reasoning as follows, with the usual translation that omits “only”: </p>
+<ul>
+  <li>If there is birth, there will be old age and death.</li>
+  <li>There is old age and death.</li>
+  <li>Therefore, there is (or was) birth. </li>
+</ul>
+
+<p id="par40">This argument may seem valid, because its premises and conclusion appear correct. (Although the first premise is actually false, since birth does not always lead to old age.) However, an argument can be invalid even if its premises and conclusion are correct. In this case, the Buddha commits the logical fallacy of affirming the consequent. It’s like saying: </p>
+<ul>
+  <li>If it is Saturday, it is a weekend.</li>
+  <li>It is a weekend.</li>
+  <li>Therefore, it is Saturday.</li>
+</ul>
+
+<p id="par41">Today may indeed be Saturday, in which case it would also be a weekend. The premises and conclusion would be correct. But the argument is still fallacious, since the premises do not necessarily lead to the conclusion. Logically, it could also be Sunday.</p>
+
+<p id="par42">We encounter similar logical problems in the analysis of the cessation sequence. From the dependency of old age and death on birth, the Buddha concludes: “If there is no birth, there will be no old age and death.” This conclusion is correct by itself. However, to derive it from the usual translation of the origination statement is to commit the fallacy of denying the antecedent: </p>
+<ul>
+  <li>If there is birth, there will be old age and death.</li>
+  <li>There is no (future) birth.</li>
+  <li>Therefore, there will be no (future) old age and death.</li>
+</ul>
+
+<p id="par43">This is like forgetting about Sunday again: </p>
+<ul>
+  <li>If it is Saturday, it is a weekend.</li>
+  <li>It is not Saturday.</li>
+  <li>Therefore, it is not a weekend. </li>
+</ul>
+
+<p id="par44">Did the Buddha really commit such basic logical fallacies? I do not think so. </p>
+<h3 id="section4">The logic of “only if”</h3>
+
+<p id="par45">Luckily, the problem can be remedied very easily. We can take <em>imasmiṃ sati idaṃ hoti</em> to be a statement of necessity instead of sufficiency. Necessity is what the entire principle behind Dependent Arising amounts to in the first place. If something <em>depends</em> on another thing, it means that it is necessary for it. It does not a mean that it is always sufficient for it.</p>
+
+<p id="par46">Daily-life uses of the word ‘dependent’ (<em>paṭicca</em>) illustrate this as well. For example, it is said that the body is dependent on food and will die without it.&zwj;<sup><a href="#n22" id="l22">[22]</a></sup> Food is not a sufficient condition for the body’s continuance; it is just a necessary condition for it. Otherwise people who eat would never die. In context of Dependent Arising itself, it is said that fire is dependent on fuel.&zwj;<sup><a href="#n23" id="l23">[23]</a></sup> Fuel is necessary for fire, but not sufficient. Other conditions, like oxygen and heat, also need to be present. Another discourse likewise says that the burning of an oil lamp is dependent on (<em>paṭicca</em>) oil and a wick.&zwj;<sup><a href="#n24" id="l24">[24]</a></sup></p>
+
+<p id="par47">In order to convey the idea of necessity, we should translate <em>imasmiṃ sati idaṃ hoti</em> as “only if there is this, will there be that”. The addition of the single word “only” completely changes the meaning. Suppose I say, “If it is cold, it snows.” This means it <em>always</em> snows whenever it is cold. But if I say, “Only if it is cold, it snows”, then it just means that it needs to be cold in order for it to snow.</p>
+
+<p id="par48">I suggest to translate the Buddha’s analysis as follows: </p>
+
+<blockquote>
+
+<p id="par49">I thought: “There will be old age and death, <em>only</em> if there is what? What do old age and death depend on?” Then, by attending properly, I comprehended it, understanding that there will be old age and death, <em>only</em> if there is birth. Old age and death depend on birth.</p>
+</blockquote>
+
+<p id="par50">When such a translation is applied to all the links, the earlier problems disappear: </p>
+<ul>
+  <li>“Only if there are sensations, will there be craving.” While this is perhaps a superfluous statement in and of itself,&zwj;<sup><a href="#n25" id="l25">[25]</a></sup> it is correct. When we don’t experience anything, we also cannot crave anything. </li>
+  <li>“Only if there is birth, will there be old age and death.” Indeed, only when we are born, can we get old and die. We may die young, but if we <em>do</em> get old, then it only happens because we were born.</li>
+  <li>“Only if there is craving and consequent taking up, will there be a continuation of existence and hence birth.” With the inclusion of “only” it is no longer the case that <em>all</em> craving leads to rebirth, even craving just before enlightenment. Instead, now craving is just a requirement for rebirth to happen after death. So even if you have craving today, you will still not get reborn if you abandon it tomorrow. </li>
+  <li>“Only if there is ignorance and consequent willful actions, will there be consciousness (rearising in a next life).” The idea is the same as the previous point. You only get reborn if there is ignorance, not when there is no ignorance. </li>
+  <li>“Only if there is consciousness, will there be the immaterial aspects and body; and only if there are the immaterial aspects and body, will there be consciousness.” Now these two factors are no longer self-sufficient. There is room for ignorance and willful actions to also be required for their continuance. This mutual dependency between the two factors is illustrated with a simile of two bundles of reeds that lean against one another.&zwj;<sup><a href="#n26" id="l26">[26]</a></sup> The idea is that one bundle can stand <em>only</em> if the other stands; not that <em>if</em> one stands, the other also stands automatically. One bundle standing is not sufficient for the other to stand, but it is necessary. The commentaries call this ‘mutual dependency’ (or ‘interdependence’, <em>aññamañña-paccayatā</em>).</li>
+  <li>“Only if there are the six senses, will there be sense impressions and consequent sensations.” This is correct. If there are no senses, we cannot experience any sensations.</li>
+  <li>“Only if there is ignorance, will there be willful actions.” With this translation there can no longer be different conditions that also lead to willful actions. If willful actions happen <em>only</em> if there is ignorance, logically they cannot also happen when there is no ignorance.</li>
+</ul>
+
+<p id="par51">The last principle applies to all other links as well. Because all are phrased as necessary conditions, there can be no other, independent conditions that lead to the same results. For example, “<em>only</em> if there is existence [continuing from a past life], will there be birth” leaves no room for anybody to say: “If there is <em>no</em> existence [continuing from a past life], there is also birth.”</p>
+
+<p id="par52">The principle of necessity must be what the Buddha had in mind. If not, it would defeat the entire purpose of the origination sequence. Then there could logically be numerous independent conditions that result in any of the twelve factors, so that in the end, suffering could arise from something other than ignorance.</p>
+
+<p id="par53">In sum, the inclusion of “only” creates a statement of necessity rather than sufficiency. Two problems are thereby avoided: the preceding factors of Dependent Arising no longer <em>always</em> lead to the subsequent ones; and there can no longer be other, independent factors that lead to the same results. </p>
+<hr>
+
+<p id="par54">In essence, that is all I wish to get across. But for sake of comprehensiveness, we can return to the logical principles of modus ponens and modus tollens. With the translation “only if”, the Buddha actually uses these two valid inferences. In order to explain this, I have to introduce another logical principle, which says that sufficiency and necessity are <strong>dual</strong> to one another. That is to say, if <em>P</em> is a sufficient condition for <em>Q</em>, then <em>Q</em> is a necessary condition for <em>P</em>.</p>
+
+<p id="par55">In logical notation, we can simply turn things around: </p>
+<ul>
+  <li><em>P</em> &#11106;&#xFE0E; <em>Q</em></li>
+  <li><em>Q</em> &#11104;&#xFE0E; <em>P</em></li>
+</ul>
+
+<p id="par56">We can read this as: </p>
+<ul>
+  <li>if <em>P</em>, then <em>Q</em></li>
+  <li>only if <em>Q</em>, then <em>P</em></li>
+</ul>
+
+<p id="par57"> Because of this equivalence, the statement <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> itself is also read aloud as “<em>P</em> only if <em>Q</em>”. Logically, this means the exact same as “if <em>P</em>, then <em>Q</em>” and “<em>P</em> implies <em>Q</em>”.&zwj;<sup><a href="#n27" id="l27">[27]</a></sup></p>
+
+<p id="par58">This principle can be unintuitive in the abstract, so let’s apply it to our examples. “If it rains, there are clouds” is logically equivalent to “it rains only if there are clouds”. And “if it is Saturday, it is a weekend” is equivalent to “it is Saturday only if it is a weekend”. In each case, the transformed “only if” statements are clearly true. Logically, they convey the same information as the original “if” statements.</p>
+
+<p id="par59">The same applies to Dependent Arising. We can rephrase “only if there is birth, will there be old age and death” as “if there is old age and death, there (earlier) was birth”. The Buddha doesn’t literally say this in the suttas, but with this transformation, it is more apparent how the logic behind the origination sequence is effectively a modus ponens: </p>
+<ul>
+  <li>If there is old age and death, there was birth.</li>
+  <li>There is old age and death.</li>
+  <li>Therefore, there was (earlier) birth.</li>
+</ul>
+
+<p id="par60">The idea is more general than current old age & death and earlier birth. It applies to old age & death and birth in general, across time. But the basic logic for the general case would be the same.</p>
+
+<p id="par61">The same logic also applies to all the following links. In full, the Buddha’s analysis of origination can be written as follows: </p>
+<ul>
+  <li>old age and death &#11106;&#xFE0E; birth &#11106;&#xFE0E; existence &#11106;&#xFE0E; taking up &#11106;&#xFE0E; craving &#11106;&#xFE0E; sensations &#11106;&#xFE0E; sense impressions &#11106;&#xFE0E; six senses &#11106;&#xFE0E; immaterial aspects and body &#11106;&#xFE0E; consciousness &#11106;&#xFE0E; willful actions &#11106;&#xFE0E; ignorance</li>
+</ul>
+
+<p id="par62">This analysis starts at old age and death and works its way back to ignorance. But because of the equivalence of <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> and <em>Q</em>&nbsp;&#11104;&#xFE0E;&nbsp;<em>P</em>, we can turn the order around: </p>
+<ul>
+  <li>ignorance &#11104;&#xFE0E; willful actions &#11104;&#xFE0E; consciousness &#11104;&#xFE0E; immaterial aspects and body &#11104;&#xFE0E; six senses &#11104;&#xFE0E; sense impressions &#11104;&#xFE0E; sensations &#11104;&#xFE0E; craving &#11104;&#xFE0E; taking up &#11104;&#xFE0E; existence &#11104;&#xFE0E; birth &#11104;&#xFE0E; old age and death</li>
+</ul>
+
+<p id="par63">The arrows here probably point the other way than you would have expected. But try not to think of them as indicating the direction of causality. A certain causality is implied, but it is not indicated by the direction of the arrows. Again, in logical notation <em>Q</em>&nbsp;&#11104;&#xFE0E;&nbsp;<em>P</em> just means “only if <em>Q</em>, then <em>P</em>”. This logic could also apply to things like weekends and Saturdays, where there is no meaningful causal connection between the two. So the above sequence is simply saying: “Only if there is ignorance, will there be willful actions. [And so on until:] Only if there is birth, will there be old age and death.”</p>
+
+<p id="par64">Instead of saying “only if <em>Q</em>, then <em>P</em>”, we can also say “dependent on <em>Q</em>, is <em>P</em>” (or “<em>P</em> depends on <em>Q</em>”). This is just another way to convey the same necessary condition. For example, “only if there are clouds, it rains” means the same as “dependent on clouds, is rain”. Because of this, the Buddha usually summarized the origination sequence as follows: </p>
+
+<blockquote>
+
+<p id="par65">Dependent on ignorance, there are willful actions. (<em>Avijjāpaccayā sankhārā</em>.) Dependent on willful actions, consciousness. Dependent on consciousness, the immaterial aspects and body. Dependent on the immaterial aspects and body, the six senses. Dependent on the six senses, sense impressions. Dependent on sense impressions, sensations. Dependent on sensations, craving. Dependent on craving, taking up. Dependent on taking up, existence. Dependent on existence, birth. And dependent on birth, old age and death, and sorrow, grief, pain, sadness, and distress come to be.</p>
+</blockquote>
+
+<p id="par66">Now for the cessation sequence. Remember that “only if there is birth, will there be old age and death” is equivalent to “if there is old age and death, there (earlier) was birth”. Since the latter has the form <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em>, we can apply modus tollens to it. The Buddha’s realization of his ending of future old age and death is, logically speaking, based on this principle: </p>
+<ul>
+  <li>If there is to be more old age and death, there must be more birth.</li>
+  <li>There will be no more birth.</li>
+  <li>Therefore, there will be no more old age and death.</li>
+</ul>
+
+<p id="par67">Combining the last two points, the Buddha says: “If there is no birth, there will be no old age and death.”</p>
+
+<p id="par68">We can also put this as, “no birth &#11106;&#xFE0E; no old age and death”. And we can do the same for all preceding links: </p>
+<ul>
+  <li>no ignorance &#11106;&#xFE0E; no willful actions &#11106;&#xFE0E; no consciousness &#11106;&#xFE0E; no immaterial aspects and body &#11106;&#xFE0E; no six senses &#11106;&#xFE0E; no sense impressions &#11106;&#xFE0E; no sensations &#11106;&#xFE0E; no craving &#11106;&#xFE0E; no taking up &#11106;&#xFE0E; no existence &#11106;&#xFE0E; no birth &#11106;&#xFE0E; no old age and death</li>
+</ul>
+
+<p id="par69">The Buddha therefore summarized: </p>
+
+<blockquote>
+
+<p id="par70">When ignorance completely fades away and ceases, willful actions will cease. When willful actions cease, consciousness will cease. When consciousness ceases, the immaterial aspects and body will cease. When the immaterial aspects and body cease, the six senses will cease. When the six senses cease, sense impressions will cease. When sense impressions cease, sensations will cease. When sensations cease, craving will cease. When craving ceases, taking up will cease. When taking up ceases, existence will cease. When existence ceases, birth will cease. And when birth ceases, old age and death, and sorrow, grief, pain, sadness, and distress, will cease.</p>
+</blockquote>
+
+<p id="par71">As a last logical step, we can also combine all the link together. There is a logical principle called the <strong>hypothetical syllogism</strong>, which says: “If <em>P</em> implies <em>Q</em>, and <em>Q</em> implies <em>R</em>, then <em>P</em> implies <em>R</em>.” This lets us skip over the immediate factor <em>Q</em> and jump right from <em>P</em> to <em>R</em>: </p>
+<ul>
+  <li><em>P</em> &#11106;&#xFE0E; <em>Q</em></li>
+  <li><em>Q</em> &#11106;&#xFE0E; <em>R</em></li>
+  <li>Therefore, <em>P</em> &#11106;&#xFE0E; <em>R</em></li>
+</ul>
+
+<p id="par72">This principle is quite intuitive in real life. To expand our examples: </p>
+<ul>
+  <li>If it is the day after Friday, it is Saturday.</li>
+  <li>If it is Saturday, it is a weekend.</li>
+  <li>Therefore, if it is the day after Friday, it is a weekend.</li>
+</ul>
+<ul>
+  <li>If the streams start flowing, it rains.</li>
+  <li>If it rains, there are clouds.</li>
+  <li>Therefore, if the streams start flowing, there are clouds.</li>
+</ul>
+
+<p id="par73">We are not limited to skipping just one single step. In case of Dependent Arising, we can skip straight from old age and death to ignorance: </p>
+<ul>
+  <li>old age and death &#11106;&#xFE0E; birth </li>
+  <li>birth &#11106;&#xFE0E; existence</li>
+  <li>[and so on until:]</li>
+  <li>willful actions &#11106;&#xFE0E; ignorance</li>
+  <li>Therefore, old age and death &#11106;&#xFE0E; ignorance</li>
+</ul>
+
+<p id="par74">To put this conclusion in ordinary language: “There will be (future) old age and death, only if there is ignorance.” This is what the Buddha concluded as well: </p>
+
+<blockquote>
+
+<p id="par75">Whatever suffering may originate, it all depends on ignorance. […] Those who journey again and again, transmigrating through births and deaths, going from one state of existence to another: their destinations are just due to ignorance.&zwj;<sup><a href="#n28" id="l28">[28]</a></sup></p>
+</blockquote>
+
+<p id="par76">By virtue of modus tollens, we can now conclude: “If there is no ignorance, there will be no old age and death.” This is, of course, the entire idea of the twelvefold sequence of Dependent Arising: </p>
+
+<blockquote>
+
+<p id="par77">When ignorance completely fades away and ceases, suffering will no longer originate. […] Ignorance is indeed the great delusion because of which we have long transmigrated. But beings who have attained knowledge, do not go on to a next life.&zwj;<sup><a href="#n29" id="l29">[29]</a></sup></p>
+</blockquote>
+
+<p id="par78">Few Buddhists would disagree with this conclusion. But my point is, with the usual translation of <em>imasmiṃ sati idaṃ hoti</em>, none of this logically works. We have to include “only”. </p>
+<h3 id="section5">Translating as “only if”</h3>
+
+<p id="par79">One important question remains to be answered. Is it linguistically possible to translate <em>imasmiṃ sati idaṃ hoti</em> as “only if there is this, will there be that”?</p>
+
+<p id="par80">In short, yes. The clause <em>imasmiṃ sati</em> is a locative absolute, which Wijesekera explains can “signify a condition that exists or should exist for the fulfillment of the main action, which may be rendered by such expressions as ‘if, on condition, provided that’ etc.”&zwj;<sup><a href="#n30" id="l30">[30]</a></sup> By “a condition that exists or should exist”, Wijesekera means the locative absolute can signify a sufficient or necessary condition. The latter can be indicated with “provided that”, as Wijesekera suggests, but also with “only if”.</p>
+
+<p id="par81">The root issue is that the distinction between the English “if” and “only if” does not exist in Pali.&zwj;<sup><a href="#n31" id="l31">[31]</a></sup> The locative absolute can mean either, depending on context. However, the context of Dependent Arising requires the latter. It requires <em>imasmiṃ sati</em> to indicate a necessary condition. As Jayatilleke also concluded: “<em>B</em> does not occur unless <em>A</em> is present and occurs <em>only</em> when <em>A</em> is present.”&zwj;<sup><a href="#n32" id="l32">[32]</a></sup> </p>
+<hr>
+
+<p id="par82">The astute reader may wonder whether the negative statement—<em>imasmiṃ asati idaṃ na hoti</em>—should also be translated with “only”. But here the inclusion of “only” would be a mistake.</p>
+
+<p id="par83">The principle of <strong>contraposition</strong> (which is closely related to modus tollens) allows us to make an immediate inference from <em>P</em>&nbsp;&#11106;&#xFE0E;&nbsp;<em>Q</em> (i.e. from <em>Q</em>&nbsp;&#11104;&#xFE0E;&nbsp;<em>P</em>), namely: </p>
+<ul>
+  <li><em>Q</em> &#11104;&#xFE0E; <em>P</em></li>
+  <li>therefore, no <em>Q</em> &#11106;&#xFE0E; no <em>P</em></li>
+</ul>
+
+<p id="par84">For example: </p>
+<ul>
+  <li>Only if there are clouds, there is rain.</li>
+  <li>Therefore, if there are no clouds, there is no rain.</li>
+</ul>
+
+<p id="par85">If we instead concluded, “<em>only</em> if there are no clouds, there is no rain”, we would again omit the possibility of rainless yet cloudy days.</p>
+
+<p id="par86">In case of Dependent Arising, we can say: </p>
+<ul>
+  <li>Only if there is birth, will there be old age and death.</li>
+  <li>Therefore, if there is no birth, there will be no old age and death.</li>
+</ul>
+
+<p id="par87">Again, this inference would not be valid for translations that omit “only” from the first statement. From “<em>if</em> there is birth, there will be old age and death” we cannot infer “if there is no birth, there will be no old age and death”. This would be confusing sufficiency and necessity, which I don’t think the Buddha was doing. </p>
+<h3 id="section6">The logic of “because”</h3>
+
+<p id="par88">If <em>imasmiṃ sati idaṃ hoti</em> is about necessity, then so should be the second statement of dependency: <em>imassa uppādā idaṃ uppajjati</em>, “because this arises, that arises”. If we construct an analogous statement for our example, we see that this is indeed the case: </p>
+<ul>
+  <li>Because clouds form, rain happens.</li>
+</ul>
+
+<p id="par89">This does not mean that clouds are a sufficient condition for rain, that it always rains when there are clouds. It means that rain only happens because there is a formation of clouds. The occurrence of rain depends on the occurrence of clouds.</p>
+
+<p id="par90">As for Dependent Arising: </p>
+<ul>
+  <li>Because birth arises, old age and death arise.</li>
+</ul>
+
+<p id="par91">This means old age and death happen only because birth happened first. So this is again a statement of necessity, not sufficiency. </p>
+<h3 id="section7">Causality and “only if”</h3>
+
+<p id="par92">The term <em>idappaccayatā</em> has also been translated as ‘conditionality’. This is fine, but I prefer ‘dependency’, partly because ‘conditionality’ could imply both sufficient and necessary conditions. Dependent Arising is primarily concerned with the latter, which I feel is better reflected by ‘dependency’. In addition, this translation preserves the linguistic connection with ‘Dependent Arising’ (<em>paṭicca-samuppāda</em>). The words <em>paccaya</em> and <em>paṭicca</em> both come from the verb <em>pacceti</em>, meaning ‘to fall back on, to depend on’.</p>
+
+<p id="par93"><em>Idappaccayatā</em> has also been translated as ‘causality’. However, Venerable Payutto argues: “Although the twelve factors […] act as conditions for one another, this is not the same as saying they are ‘causes’ for one another.”&zwj;<sup><a href="#n33" id="l33">[33]</a></sup> I think the term ‘cause’ is acceptable, as long as we limit what we mean by this.&zwj;<sup><a href="#n34" id="l34">[34]</a></sup> Gokhale explains: “The concept of cause in the West is generally understood as the sufficient condition of the effect, whereas in Indian philosophical discussions, it is generally understood as a necessary condition.”&zwj;<sup><a href="#n35" id="l35">[35]</a></sup> In the so-called West, a cause is generally considered to be a thing which actively produces its effect. A cause of death would for example be a heart attack. It wouldn’t be birth.&zwj;<sup><a href="#n36" id="l36">[36]</a></sup> But when the Buddha says birth is a cause of death, he simply means that birth is necessary for death. Birth causes death in the sense that death couldn’t happen without it.</p>
+
+<p id="par94">This knowledge provides important context for passages like this: </p>
+
+<blockquote>
+
+<p id="par95">“Ānanda, I said old age and death depend on birth, which is to be understood as follows: If there were completely and utterly no birth at all, not of anyone anywhere […] not of any beings into any state. Then, with the total absence and cessation of birth, would old age and death occur?”</p>
+
+<p id="par96">“No, sir.”</p>
+
+<p id="par97">“Therefore, birth is a cause, source, origin, and condition for old age and death.”&zwj;<sup><a href="#n37" id="l37">[37]</a></sup></p>
+</blockquote>
+
+<p id="par98">Here the Buddha effectively applies the principle of contraposition: </p>
+<ul>
+  <li>If there is no birth, there is no old age and death.</li>
+  <li>Therefore, old age and death depend on birth.</li>
+  <li>(I.e., only if there is birth, will there be old age and death.)</li>
+</ul>
+
+<p id="par99">The Buddha says birth is a condition (<em>paccaya</em>) for death, by which he means it is a necessary condition. The word <em>paccaya</em> also means ‘requirement’, such as when it is used for the requisites of a monastic, specifically medicines.&zwj;<sup><a href="#n38" id="l38">[38]</a></sup> Medicines alone are not sufficient for a monastic to survive, but for a sick one they would be necessary. Furthermore, one discourse speaks of certain defilements that arise “with form as a condition” (or “dependent on form”, <em>rūpa-paccayā</em>).&zwj;<sup><a href="#n39" id="l39">[39]</a></sup> This must also indicate a necessary condition rather than a sufficient one, because form by itself does not cause any defilements.</p>
+
+<p id="par100">The Buddha also says birth is cause (<em>hetu</em>) for death. Considering modern conceptions of causality, ‘cause’ can be a misleading translation in this context, so in earlier translations I avoided it.&zwj;<sup><a href="#n40" id="l40">[40]</a></sup> But the translation is workable once the reader realizes that causality has been conceived of in various ways throughout the centuries. Aristotle for example talked about four types of causes, one of which is the material a thing is made of. To Aristotle, clay is a cause for a pot. The ancient Indians also had a different conception of causality than most of us do nowadays. To them, necessary conditions are also causes.</p>
+
+<p id="par101">The <span class="texttitle">Nyāya Sutra Bhāshya</span> by Vātsyāyana is a Hindu text, which displays these ideas perfectly. One passage discusses different types of inference. In illustrating one type, the text says that the conclusion “it rains (only) if there are clouds” can be inferred from the knowledge that it never rains when there are no clouds. (This knowledge literally is, “if there are no clouds, there is no rain”, <em>asatsu megheṣu vṛṣṭir na bhavati</em>, which has the exact same grammatical structure as the Buddha’s statements of dependency.) A hypothetical opponent then replies that the conclusion is invalid, since “sometimes there are clouds, but there is no rain”. Vātsyāyana replies that the opponent misunderstands the conclusion. The knowledge that it never rains when there are no clouds leads to the conclusion that “clouds are a <em>necessary</em> condition for rain. Of course clouds are not a <em>sufficient</em> condition for rain; that is the way with causal factors.”&zwj;<sup><a href="#n41" id="l41">[41]</a></sup></p>
+
+<p id="par102">Firstly, this confirms how “causal factors” were understood in India at the time. Causes were primarily necessary conditions. (The text has been dated anywhere between 200&nbsp;BCE and 400&nbsp;CE.)</p>
+
+<p id="par103">Secondly, the opponent must have understood Vātsyāyana to have concluded “there is rain <em>if</em> there are clouds”. As we discussed, this would mean clouds are a sufficient condition for rain, which indeed wouldn’t allow for times when there are clouds but no rain. And to derive this conclusion from “if there are no clouds, there is no rain” would be invalid. So the opponent’s critique would be correct.</p>
+
+<p id="par104">However, Vātsyāyana actually meant “there is rain <em>only</em> if there are clouds”, in which case clouds are just a necessary condition for rain. It is hard to convey in English translations, but the opponent’s confusion is understandable. The Sanskrit statement has a similar locative absolute as the Pali <em>imasmiṃ sati</em>.&zwj;<sup><a href="#n42" id="l42">[42]</a></sup> The difference between “if” and “only if” does not exist here either. It is therefore the context, not the grammar, which determines whether we are dealing with sufficient or necessary conditions. It seems Vātsyāyana set up his hypothetical opponent precisely to make this point, the same point I have tried to make in this essay. </p>
+<h3 id="section8">Closing thoughts</h3>
+
+<p id="par105">The reader may wonder, does all of this really matter? Admittedly, in a deep sense, no. I don’t think anybody will be deprived of real insights into Dependent Arising just because a translator chose “if” over “only if”. These insights come from meditation, not from technical analysis such as the above. We can even misunderstand the Buddha’s words in theory, yet still understand Dependent Arising in practice, and vice-versa.</p>
+
+<p id="par106">However, I would not have written this essay if I thought the translation did not matter at all. I have seen textual explanations of Dependent Arising go awry by taking <em>imasmiṃ sati</em> as indicating sufficient conditions. But when seen as necessary conditions, the whole teaching becomes a more unified whole. By including “only”, the origination and cessation sequences convey the exact same dependencies. They are logically equivalent; or in technical terms, are contrapositions of one another. This shows the simplicity, and yet brilliancy, of the Buddha’s teaching. To me, that worthwhile in its own right.</p>
+
+<p id="par107">Lastly, two other ways to solve the problems have been suggested, both of which conserve the sufficient conditionality of <em>this</em> for <em>that</em> in <em>imasmiṃ sati idaṃ hoti</em>. The first suggestion is that each factor in the origination sequence is not only a sufficient condition for the following one, but also necessary condition. This means we should translate the statement as “there will be this, <em>if and only if</em> there is that”. The second suggestion is that the links in the origination sequence all assume the existence of ignorance. For example, when the Buddha says “if there are sensations, there will be craving”, he really means “if there are sensations <em>and ignorance</em>, there will be craving”.&zwj;<sup><a href="#n43" id="l43">[43]</a></sup></p>
+
+<p id="par108">Both suggestions solve some of the problems, but far from all. They also create problems of their own. For sake of brevity, I will not explain why this is the case here. Nevertheless, even if these alternatives did not have their own problems, I think my suggestion is still considerably more simple and therefore preferable.</p>
+
+<p id="par109">I hope future translators will agree and consider the inclusion of “only”. </p>
+<h3 id="section9">Notes</h3>
+
+
+<ol class="footnotes">
+  <li id="n1"><p><cite><a name="bl1" href="#be1">Bodhi</a></cite>, <a href="https://suttacentral.net/sn12.21/pli/ms">SN&nbsp;12.21</a>&nbsp;<a href="#l1">&#8617;&#xFE0E;</a></p></li>
+  <li id="n2"><p>Although I do have some formal training in mathematical logic, I am not a logician. For more extensive explanations see for example <cite><a name="bl11" href="#be6">Delancey</a></cite>, especially p.28–&zwj;29.&nbsp;<a href="#l2">&#8617;&#xFE0E;</a></p></li>
+  <li id="n3"><p>Compare <cite><a name="bl14" href="#be7">Duroiselle</a></cite> §603iii: “<em>Sati</em> […] may also often be translated by ‘if, such being the case’.” <cite><a name="bl47" href="#be25">Wijesekera</a></cite> §184: “The temporal notion is not the only idea expressed by the loc[ative] absolute. […] It may also signify a condition that exists or should exist for the fulfillment of the main action, which may be rendered by such expressions as ‘if, on condition, provided that’ etc.”&nbsp;<a href="#l3">&#8617;&#xFE0E;</a></p></li>
+  <li id="n4"><p>For example <cite><a name="bl17" href="#be10">Griffiths</a></cite> p.31: “For the occurrence of any given event <em>Y</em>, there exists a necessary and sufficient condition <em>X</em>.” <cite><a name="bl32" href="#be20">Reat</a></cite> p.21: “The term [<em>paṭiccasamuppāda</em>] may properly be applied to any set of results dependent upon necessary and sufficient conditions.” <cite><a name="bl2" href="#be2">Brahmavamso</a></cite>: “The sufficient condition is expressed by the first half of <em>idappaccayatā</em>.”&nbsp;<a href="#l4">&#8617;&#xFE0E;</a></p></li>
+  <li id="n5"><p>For example <cite><a name="bl40" href="#be23">Sujato</a></cite> p.89: “The first pair of principles [i.e. the first two statements of <em>idappaccayatā</em>] appears to imply sufficient conditionality. If something exists, another thing comes to be. However, a close contextual examination reveals that this is not so. [D]ependent origination is primarily necessary conditionality.” <cite><a name="bl21" href="#be12">Harvey</a></cite> p.65 (quoted by <cite><a name="bl36" href="#be22">Sangiacomo</a></cite> p.16): “The ‘that’ of the abstract formula is not a single determining cause but a major condition, one of several. It is clear that a <em>nidāna</em> is seen as a <em>necessary</em> condition for that which it conditions, but not as a necessary and <em>sufficient</em> condition.” <cite><a name="bl15" href="#be8">Gethin</a></cite> p.153: “Although the formula states just one condition for each subsequent link, this should not be taken as suggesting that a single cause is a sufficient condition for the arising of each further link.” <cite><a name="bl7" href="#be3">Brasington</a></cite> p.26: “Dependent origination is a teaching about necessary conditions.” <cite><a name="bl33" href="#be21">Ronkin</a></cite> p.206: “If <em>y</em> arose, then <em>x</em> had necessarily been present.” <cite><a name="bl20" href="#be11">Hamilton</a></cite> p.214 (quoted by <cite><a name="bl34" href="#be21">Ronkin</a></cite> p.207): “If there is a <em>b</em>, then there must have been an <em>a</em>.” <cite><a name="bl3" href="#be2">Brahmavamso</a></cite>: “Only some of the first 11 factors are a sufficient condition for the factor following.” <cite><a name="bl8" href="#be4">Cintita</a></cite> p.222: “Each link represents a necessary condition—though in general not a sufficient condition—for the link that follows.” <cite><a name="bl27" href="#be16">Jones 2022</a></cite> p.135: “To understand each of these conditionally-arisen phenomena as necessary and sometimes sufficient conditions for the arising of the next in the sequence allows for interpretations that are truer to the teachings [compared to when seen as a causal (and sufficient) sequence].” &nbsp;<a href="#l5">&#8617;&#xFE0E;</a></p></li>
+  <li id="n6"><p><cite><a name="bl23" href="#be13">Jayatilleke</a></cite> p.449 paraphrases <em>imasmiṃ sati idaṃ hoti</em> as “<em>B</em> […] occurs only when <em>A</em> is present” but still translates it as “whenever <em>A</em> is present, <em>B</em> is present”. Similarly, <cite><a name="bl37" href="#be22">Sangiacomo</a></cite> p.16 paraphrases “only when this is present, then that is” but still translates “when this is, that is”.&nbsp;<a href="#l6">&#8617;&#xFE0E;</a></p></li>
+  <li id="n7"><p>Compare the Buddha’s definition of Dependent Arising in <a href="https://suttacentral.net/sn12.1/pli/ms">SN&nbsp;12.1</a>.&nbsp;<a href="#l7">&#8617;&#xFE0E;</a></p></li>
+  <li id="n8"><p> In the Abhidharmakośabhāṣya, Vasumitra already makes this argument to disprove sufficiency in the links; see <cite><a name="bl9" href="#be5">De La Vallée Poussin</a></cite> p.231 and <cite><a name="bl18" href="#be10">Griffiths</a></cite> p.69. Also making it for the same reason are <cite><a name="bl4" href="#be2">Brahmavamso</a></cite>, <cite><a name="bl41" href="#be23">Sujato</a></cite> p.89, <cite><a name="bl22" href="#be12">Harvey</a></cite> p.65 (quoted by <cite><a name="bl38" href="#be22">Sangiacomo</a></cite> p.16), and <cite><a name="bl28" href="#be16">Jones 2022</a></cite> p.138.&nbsp;<a href="#l8">&#8617;&#xFE0E;</a></p></li>
+  <li id="n9"><p>Compare <cite><a name="bl42" href="#be23">Sujato</a></cite> p.90: “Quite clearly, birth is a necessary condition for aging & death. It is true that birth is also a sufficient condition for death; however it is not a sufficient condition for aging (because a being who has been newly born might die immediately before aging).”&nbsp;<a href="#l9">&#8617;&#xFE0E;</a></p></li>
+  <li id="n10"><p><a href="https://suttacentral.net/sn12.2/pli/ms">SN&nbsp;12.2</a>&nbsp;<a href="#l10">&#8617;&#xFE0E;</a></p></li>
+  <li id="n11"><p>See also <cite><a name="bl5" href="#be2">Brahmavamso</a></cite>.&nbsp;<a href="#l11">&#8617;&#xFE0E;</a></p></li>
+  <li id="n12"><p>See <a href="https://suttacentral.net/iti44/pli/ms">Iti&nbsp;44</a>.&nbsp;<a href="#l12">&#8617;&#xFE0E;</a></p></li>
+  <li id="n13"><p><a href="https://suttacentral.net/an4.131/pli/ms">AN&nbsp;4.131</a>&nbsp;<a href="#l13">&#8617;&#xFE0E;</a></p></li>
+  <li id="n14"><p>See also <cite><a name="bl6" href="#be2">Brahmavamso</a></cite>.&nbsp;<a href="#l14">&#8617;&#xFE0E;</a></p></li>
+  <li id="n15"><p><a href="https://suttacentral.net/sn12.65/pli/ms">SN&nbsp;12.65</a>. Compare <a href="https://suttacentral.net/dn14/pli/ms">DN&nbsp;14</a>, <a href="https://suttacentral.net/dn15/pli/ms">DN&nbsp;15</a>, and <a href="https://suttacentral.net/sn12.67/pli/ms">SN&nbsp;12.67</a>.&nbsp;<a href="#l15">&#8617;&#xFE0E;</a></p></li>
+  <li id="n16"><p>See <a href="https://suttacentral.net/mn43/pli/ms">MN&nbsp;43</a> and <a href="https://suttacentral.net/sn41.6/pli/ms">SN&nbsp;41.6</a>.&nbsp;<a href="#l16">&#8617;&#xFE0E;</a></p></li>
+  <li id="n17"><p><a href="https://suttacentral.net/mn28/pli/ms">MN&nbsp;28</a>&nbsp;<a href="#l17">&#8617;&#xFE0E;</a></p></li>
+  <li id="n18"><p>See also <cite><a name="bl43" href="#be23">Sujato</a></cite> p.88: “If in the thought-world of the suttas ‘<em>x</em> is a condition for <em>y</em>’ means ‘<em>x</em> is a sufficient condition for <em>y</em>’, this leaves open the question whether other things may also be sufficient.”&nbsp;<a href="#l18">&#8617;&#xFE0E;</a></p></li>
+  <li id="n19"><p>See for example <cite><a name="bl29" href="#be17">Karunadasa</a></cite>.&nbsp;<a href="#l19">&#8617;&#xFE0E;</a></p></li>
+  <li id="n20"><p><cite><a name="bl44" href="#be24">Sunyo</a></cite>&nbsp;<a href="#l20">&#8617;&#xFE0E;</a></p></li>
+  <li id="n21"><p><a href="https://suttacentral.net/sn12.10/pli/ms">SN&nbsp;12.10</a>&nbsp;<a href="#l21">&#8617;&#xFE0E;</a></p></li>
+  <li id="n22"><p><a href="https://suttacentral.net/sn46.2/pli/ms">SN&nbsp;46.2</a>&nbsp;<a href="#l22">&#8617;&#xFE0E;</a></p></li>
+  <li id="n23"><p><a href="https://suttacentral.net/mn38/pli/ms">MN&nbsp;38</a>&nbsp;<a href="#l23">&#8617;&#xFE0E;</a></p></li>
+  <li id="n24"><p><a href="https://suttacentral.net/mn41/pli/ms">MN&nbsp;41</a>&nbsp;<a href="#l24">&#8617;&#xFE0E;</a></p></li>
+  <li id="n25"><p>Notice that the cessation statement “if sensations cease, craving ceases” is also rather superfluous. Like other authors, I suspect the link between sensations and craving is somewhat artificial because at this point two shorter sequences were linked together. For a further discussion see <cite><a name="bl45" href="#be24">Sunyo</a></cite> Ch.2.&nbsp;<a href="#l25">&#8617;&#xFE0E;</a></p></li>
+  <li id="n26"><p><a href="https://suttacentral.net/sn12.67/pli/ms">SN&nbsp;12.67</a>&nbsp;<a href="#l26">&#8617;&#xFE0E;</a></p></li>
+  <li id="n27"><p>See <cite><a name="bl12" href="#be6">Delancey</a></cite> p.29.&nbsp;<a href="#l27">&#8617;&#xFE0E;</a></p></li>
+  <li id="n28"><p><a href="https://suttacentral.net/snp3.12/pli/ms">Snp&nbsp;3.12</a>&nbsp;<a href="#l28">&#8617;&#xFE0E;</a></p></li>
+  <li id="n29"><p><a href="https://suttacentral.net/snp3.12/pli/ms">Snp&nbsp;3.12</a>&nbsp;<a href="#l29">&#8617;&#xFE0E;</a></p></li>
+  <li id="n30"><p><cite><a name="bl48" href="#be25">Wijesekera</a></cite> §184&nbsp;<a href="#l30">&#8617;&#xFE0E;</a></p></li>
+  <li id="n31"><p>Compare <cite><a name="bl13" href="#be6">Delancey</a></cite> p.28: “An oddity of English is that the word ‘only’ changes the meaning of ‘if’.”&nbsp;<a href="#l31">&#8617;&#xFE0E;</a></p></li>
+  <li id="n32"><p><cite><a name="bl24" href="#be13">Jayatilleke</a></cite> p.449, emphasis added&nbsp;<a href="#l32">&#8617;&#xFE0E;</a></p></li>
+  <li id="n33"><p><cite><a name="bl30" href="#be18">Payutto</a></cite> p.238&nbsp;<a href="#l33">&#8617;&#xFE0E;</a></p></li>
+  <li id="n34"><p>Compare <cite><a name="bl39" href="#be22">Sangiacomo</a></cite> p.7: “The teaching of conditioned co-origination is often presented as a teaching about ‘causation’, although it is also often noted that this causal interpretation can be problematic if it is not sufficiently nuanced.”&nbsp;<a href="#l34">&#8617;&#xFE0E;</a></p></li>
+  <li id="n35"><p><cite><a name="bl16" href="#be9">Gokhale</a></cite> p.32&nbsp;<a href="#l35">&#8617;&#xFE0E;</a></p></li>
+  <li id="n36"><p>Compare <cite><a name="bl26" href="#be15">Jones 2011</a></cite> p.27–&zwj;28.&nbsp;<a href="#l36">&#8617;&#xFE0E;</a></p></li>
+  <li id="n37"><p><a href="https://suttacentral.net/dn15/pli/ms">DN&nbsp;15</a>&nbsp;<a href="#l37">&#8617;&#xFE0E;</a></p></li>
+  <li id="n38"><p>For example in <em>gilānappaccaya</em> (<a href="https://suttacentral.net/mn2/pli/ms">MN&nbsp;2</a>) or <em>catumāsappaccaya</em> (Bhikkhu Pācittiya 47).&nbsp;<a href="#l38">&#8617;&#xFE0E;</a></p></li>
+  <li id="n39"><p><a href="https://suttacentral.net/an5.200/pli/ms">AN&nbsp;5.200</a>&nbsp;<a href="#l39">&#8617;&#xFE0E;</a></p></li>
+  <li id="n40"><p>In <cite><a name="bl46" href="#be24">Sunyo</a></cite> I translated <em>hetu</em> as ‘condition’, with <em>paccaya</em> as ‘requirement’. Compare <cite><a name="bl35" href="#be21">Ronkin</a></cite> p.98 and p.207: “In the Nikāyas […] <em>hetu</em> and <em>paccaya</em> are regarded as synonymous. […] <em>Paccaya</em> has a wide range of meaning: it signifies ‘support’, ‘requisite’, ‘means’, ‘reason’, ‘grounds’, ‘cause’ and ‘condition’. <em>Hetu</em> is less laden a term, primarily denoting ‘cause’, ‘reason’ and ‘condition’.”&nbsp;<a href="#l40">&#8617;&#xFE0E;</a></p></li>
+  <li id="n41"><p>Nyāya Sutra Bhāshya 2.2.3–&zwj;2.2.4. Paraphrase by <cite><a name="bl31" href="#be19">Potter</a></cite> p.254, emphasis added. For a complete translation see <cite><a name="bl25" href="#be14">Jhā</a></cite> p.197–&zwj;198.&nbsp;<a href="#l41">&#8617;&#xFE0E;</a></p></li>
+  <li id="n42"><p>It uses <em>satsu</em>, Sanskrit of Pali <em>santesu</em>, which is plural of <em>sati</em>.&nbsp;<a href="#l42">&#8617;&#xFE0E;</a></p></li>
+  <li id="n43"><p>This is also Ghoṣaka’s counter to Vasumitra in the Abhidharmakośabhāṣya; see <cite><a name="bl10" href="#be5">De La Vallée Poussin</a></cite> p.231 and <cite><a name="bl19" href="#be10">Griffiths</a></cite> p.70.&nbsp;<a href="#l43">&#8617;&#xFE0E;</a></p></li>
+</ol>
+<h3 id="section10">References</h3>
+
+<dl id="biblio">
+<dt id="be1">Bodhi</dt><dd><em>The Connected Discourses of the Buddha: a new translation of the Saṃyutta Nikāya</em>, Bhikkhu Bodhi (tr.), 2000.</dd>
+<dt id="be2">Brahmavamso</dt><dd><em>Dependent Origination</em>, Ajahn Brahmavamso, 2002.</dd>
+<dt id="be3">Brasington</dt><dd><em>Dependent Origination and Emptiness</em>, Leigh Brasington, 2021.</dd>
+<dt id="be4">Cintita</dt><dd><em>Buddhist Life/Buddhist Path: the foundations of Buddhism based on earliest sources</em>, Bhikkhu Cintita, 2017.</dd>
+<dt id="be5">De La Vallée Poussin</dt><dd><em>Abhidharmakośabhāṣyam of Vasubandhu</em> (tr. Leo M. Pruden), Louis de La Vallée Poussin (tr.), 1991.</dd>
+<dt id="be6">Delancey</dt><dd><em>A Concise Introduction to Logic</em>, Craig Delancey, 2017.</dd>
+<dt id="be7">Duroiselle</dt><dd><em>A Practical Grammar of the Pāli Language. Fourth Edition, revision 3</em> (ed. Eizel), Charles Duroiselle, 1906/2007.</dd>
+<dt id="be8">Gethin</dt><dd><em>The Foundations of Buddhism</em>, Rupert Gethin, 1998.</dd>
+<dt id="be9">Gokhale</dt><dd><em>Lokāyata/Cārvāka: a philosophical inquiry</em>, Pradeep P. Gokhale, 2015.</dd>
+<dt id="be10">Griffiths</dt><dd><em>On Being Mindless: Buddhist meditation and the mind-body problem</em>, Paul J. Griffiths, 1986.</dd>
+<dt id="be11">Hamilton</dt><dd><em>Early Buddhism: a new approach</em>, Sue Hamilton, 2000.</dd>
+<dt id="be12">Harvey</dt><dd>‘The Conditioned Co-arising of Mental and Bodily Processes within Life and Between Lives’ in <em>A Companion to Buddhist Philosophy</em> pp.46–&zwj;68 (ed. S.M. Emmanuel), Peter Harvey, 2013.</dd>
+<dt id="be13">Jayatilleke</dt><dd><em>Early Buddhist Theory of Knowledge</em>, K.N. Jayatilleke, 1963.</dd>
+<dt id="be14">Jhā</dt><dd><em>Gautama's Nyāyasūtras, with Vātsyāyana-bhāṣya</em>, Gaṅgānātha Jhā, 1939.</dd>
+<dt id="be15">Jones 2011</dt><dd><em>This Being, That Becomes: the Buddha’s teaching on conditionality</em>, Dhivan Thomas Jones, 2011.</dd>
+<dt id="be16">Jones 2022</dt><dd>‘This Being, That Becomes’ in <em>Journal of the International Association of Buddhist Studies</em> vol.45 pp.119–&zwj;155, Dhivan Thomas Jones, 2022.</dd>
+<dt id="be17">Karunadasa</dt><dd>‘The Buddhist Critique of Sassatavada and Ucchedavada: the key to a proper understanding of the origin and the doctrines of early Buddhism’ in <em>The Middle Way</em> vol.74, Y. Karunadasa, 1999.</dd>
+<dt id="be18">Payutto</dt><dd><em>Buddhadhamma: the laws of nature and their benefits to life</em> (tr. R.P. Moore), P.A. Payutto, 2021.</dd>
+<dt id="be19">Potter</dt><dd><em>Encyclopedia of Indian Philosophies vol.2: Indian Metaphysics and Epistemology—the tradition of Nyaya-Vaisesika up to Gangesa</em>, Karl H. Potter (ed.), 1977.</dd>
+<dt id="be20">Reat</dt><dd>‘Some Fundamental Concepts of Buddhist Psychology’ in <em>Religion</em> vol.17, Noble Ross Reat, 1987.</dd>
+<dt id="be21">Ronkin</dt><dd><em>Early Buddhist Metaphysics: the making of a philosophical tradition</em>, Noa Ronkin, 2005.</dd>
+<dt id="be22">Sangiacomo</dt><dd>‘Conditionality (idappaccayatā) in the Pāli Discourses of the Buddha’ in <em>Philosophies</em> vol.10, Andrea Sangiacomo, 2025.</dd>
+<dt id="be23">Sujato</dt><dd><em>A Swift Pair of Messengers</em>, Bhikkhu Sujato, 2012.</dd>
+<dt id="be24">Sunyo</dt><dd><em>Seeds, Paintings and a Beam of Light: similes for Dependent Arising</em>, Bhikkhu Sunyo, 2024.</dd>
+<dt id="be25">Wijesekera</dt><dd><em>Syntax of the Cases in the Pali Nikayas</em>, O.H. de A. Wijesekera, 1993.</dd></dl>
+
+<h2>Abbreviations</h2>
+<dl>
+<dt>AN&nbsp;</dt><dd>Aṅguttara Nikāya</dd>
+<dt>DN&nbsp;</dt><dd>Dīgha Nikāya</dd>
+<dt>Iti&nbsp;</dt><dd>Itivuttaka</dd>
+<dt>MN&nbsp;</dt><dd>Majjhima Nikāya</dd>
+<dt>SN&nbsp;</dt><dd>Saṃyutta Nikāya</dd>
+<dt>Snp&nbsp;</dt><dd>Sutta Nipāta</dd>
+</dl>
+
+<h2>Colophon</h2>
+
+<p>First published in 2025.</p>
+
+<p><img src="../seeds/img/cc0.png" width="100px"></p>
+
+<p>To the extent possible under law, Bhikkhu Sunyo has waived all copyright and related or neighboring rights to this work. You may copy, modify, and distribute this work in any shape or form, without asking permission. Full license at <a href="https://creativecommons.org/publicdomain/zero/1.0/">creativecommons.org</a>.</p>
+</main>
+
+</body>
+</html>
