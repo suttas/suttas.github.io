@@ -1,3 +1,14 @@
+:root {
+  color-scheme: light dark;
+  --primary-color: #006060
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --primary-color: #00C2C2;
+  }
+}
+
 header, section, footer, aside, nav, main { 
 	display: block;
 	} 
@@ -25,9 +36,9 @@ main h2 {
 	margin: 0em;
 	}
 a, a:hover { 
-	color: #006060; 
+	color: var(--primary-color);
 	text-decoration: none; 
-	border-color: #006060;
+	border-color: var(--primary-color);
 	}
 
 main a:hover {

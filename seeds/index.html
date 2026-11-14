@@ -6,7 +6,16 @@
 <title>Seeds, Paintings and a Beam of Light</title>
 
 <style>
-a[href], a[href]:hover { color: #007575; text-decoration: none; }
+:root {
+  color-scheme: light dark;
+  --primary-color: #007575
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  --primary-color: #00C2C2;
+  }
+}
+a[href], a[href]:hover { color: var(--primary-color); text-decoration: none; }
 a[href]:hover { text-decoration: underline; }
 sup > a:hover { text-decoration: none; }
 body { 
