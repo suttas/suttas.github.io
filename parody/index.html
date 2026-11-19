@@ -8,11 +8,13 @@
 <style>
 :root {
   color-scheme: light dark;
-  --primary-color: #007575
+  --primary-color: #007575;
+  --seperator-color: black;
 }
 @media (prefers-color-scheme: dark) {
   :root {
   --primary-color: #00C2C2;
+  --seperator-color: white;
   }
 }
 a[href], a[href]:hover { color: var(--primary-color); text-decoration: none; }
@@ -38,13 +40,13 @@ table {
 	}
 td, th { border: 1px solid grey; padding: 1pt 5pt 1pt 2pt; vertical-align: top; text-align:left; }
 figure { width:100%; margin: 0; text-align:center; }
-figure img { margin: 0 2pt 0 2pt; border: 2px solid black; min-width: 100px; max-width: 300px; }
+figure img { margin: 0 2pt 0 2pt; border: 2px solid var(--seperator-color); min-width: 100px; max-width: 300px; }
 figcaption { font-style: italic; font-size: smaller; }
 table caption { font-style: italic; }
 sup { line-height: 0em; font-size: 0.8em;  }
 figure { margin-bottom: 1em; }
 li.part { margin: 1em 0; font-weight: bold; }
-hr { width: 30%; color: black; }
+hr { width: 30%; color: var(--seperator-color); }
 hr.title { width: 100%; }
 </style> 
 </head>
